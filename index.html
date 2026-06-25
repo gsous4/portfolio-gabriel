@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Sousa — DevOps</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; }
+
+   header {
+      background: linear-gradient(135deg, #0d2137, #1B6CA8, #0d2137);
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle, rgba(27,108,168,0.15) 0%, transparent 60%);
+    }
+    .avatar {
+      width: 110px; height: 110px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1B6CA8, #0d3b66);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem; font-weight: bold; color: #fff;
+      margin: 0 auto 20px;
+      border: 3px solid #1B6CA8;
+      box-shadow: 0 0 30px rgba(27,108,168,0.4);
+    }
+    header h1 { font-size: 2.8rem; margin-bottom: 10px; letter-spacing: 1px; }
+    header .cargo { font-size: 1.1rem; color: #89b4e8; margin-bottom: 8px; }
+    header .local { font-size: 0.9rem; color: #557a9e; margin-bottom: 28px; }
+    .header-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    header a {
+      padding: 10px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+    header a:hover { opacity: 0.85; }
+    .btn-primary { color: #fff; background: #1B6CA8; border: 2px solid #1B6CA8; }
+    .btn-outline { color: #89b4e8; background: transparent; border: 2px solid #1B6CA8; }
+
+    section { padding: 60px 20px; max-width: 900px; margin: 0 auto; }
+    h2 { font-size: 1.8rem; margin-bottom: 30px; color: #1B6CA8; border-bottom: 2px solid #1B6CA8; padding-bottom: 10px; }
+
+    .sobre p { font-size: 1rem; line-height: 1.8; color: #ccc; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 16px;
+    }
+    .skill {
+      background: #1a1a2e;
+      border: 1px solid #1B6CA8;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .skill span { display: block; font-size: 1.8rem; margin-bottom: 8px; }
+
+    .projetos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .projeto {
+      background: #1a1a2e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .projeto h3 { color: #1B6CA8; margin-bottom: 10px; }
+    .projeto p { color: #ccc; font-size: 0.9rem; line-height: 1.6; margin-bottom: 14px; min-height: 60px; }
+    .projeto a {
+      color: #1B6CA8;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border: 1px solid #1B6CA8;
+      padding: 6px 14px;
+      border-radius: 6px;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .tag {
+      background: #0d3b66;
+      color: #89b4e8;
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .contato { text-align: center; background: #1a1a2e; border-radius: 10px; padding: 40px; }
+    .contato p { color: #ccc; margin-bottom: 20px; }
+    .contato a {
+      color: #fff;
+      background: #1B6CA8;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 8px;
+    }
+
+    footer { text-align: center; padding: 20px; color: #555; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="avatar">GS</div>
+    <h1>Gabriel de Sousa Ferreira</h1>
+    <p class="cargo">Estudante de ADS | DevOps em formação</p>
+    <p class="local">📍 Águas Lindas de Goiás — GO</p>
+    <div class="header-btns">
+      <a href="mailto:gabrielsousamarall@gmail.com" class="btn-primary">✉ Email</a>
+      <a href="https://github.com/gsous4" target="_blank" class="btn-outline">GitHub</a>
+    </div>
+  </header>
+  
+  <section class="sobre">
+    <h2>Sobre mim</h2>
+    <p>
+      Olá! Sou Gabriel, estudante de Análise e Desenvolvimento de Sistemas na Anhanguera
+      e estou me especializando em DevOps. Tenho experiência prática com Docker, Kubernetes,
+      Terraform, Ansible e GitHub Actions, desenvolvida através de projetos reais.
+      Busco minha primeira oportunidade como estagiário para crescer e contribuir com
+      equipes de tecnologia.
+    </p>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill"><span>🐳</span>Docker</div>
+      <div class="skill"><span>⚓</span>Kubernetes</div>
+      <div class="skill"><span>🏗️</span>Terraform</div>
+      <div class="skill"><span>🤖</span>Ansible</div>
+      <div class="skill"><span>⚙️</span>GitHub Actions</div>
+      <div class="skill"><span>☁️</span>GCP</div>
+      <div class="skill"><span>🌐</span>HTML/CSS</div>
+      <div class="skill"><span>🐧</span>Linux</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projetos</h2>
+    <div class="projetos-grid">
+
+      <div class="projeto">
+        <h3>Sistema SEBRAE</h3>
+        <div class="tags">
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Terraform</span>
+        </div>
+        <p>Sistema de boas-vindas para microempreendedores containerizado com Docker e orquestrado com Kubernetes.</p>
+        <a href="https://github.com/gsous4/projeto-sebrae" target="_blank">Ver no GitHub</a>
+      </div>
+
+      <div class="projeto">
+        <h3>DevTask API</h3>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Docker</span>
+        </div>
+      <p>API REST orquestrada em cluster Kubernetes com múltiplos Pods e alta disponibilidade.</p>
+        <a href="https://github.com/gsous4/devtask-api" target="_blank">Ver no GitHub</a>
+      </div>
